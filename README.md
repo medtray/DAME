@@ -40,15 +40,15 @@ where the flags are:
 
 ## Fine-tuning of DAME with different percentages of training data from target domain
 
-to be added
+
 
 ## Fine-tuning of DAME with Active Learning (AL)
 
-to be added
+
 
 ## Dropping expert models from source domains
 
-to be added
+
 
 ## Reference
 
