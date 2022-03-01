@@ -33,7 +33,7 @@ python train.py \
 where the flags are:
 * ``--dataset_loc``: the data location
 * ``--n_gpu``: set to 1 for using GPU
-* ``--n_epochs``: set to 1 for using GPU
+* ``--n_epochs``: number of epochs
 * ``--model_dir``: the output folder where to store models
 * ``--batch_size``: batch size for training and testing
 * ``--lr``: learning rate for training
