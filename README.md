@@ -64,9 +64,10 @@ publisher = {Association for Computing Machinery},
 address = {New York, NY, USA},
 url = {https://doi.org/10.1145/3488560.3498486},
 doi = {10.1145/3488560.3498486},
+booktitle = {Proceedings of the Fifteenth ACM International Conference on Web Search and Data Mining},
 pages = {1016–1024},
 numpages = {9},
-keywords = {domain adaptation, entity matching, transfer learning},
+keywords = {entity matching, domain adaptation, transfer learning},
 location = {Virtual Event, AZ, USA},
 series = {WSDM '22}
 }
