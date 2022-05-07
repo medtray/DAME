@@ -56,6 +56,18 @@ where the flags are:
 * ``--pretrained_multi_xformer``: the location of trained models
 * ``--batch_size``: batch size for testing
 
+## Fine-tuning of DAME on the target domain with different percentages of training data
+
+To fine-tune `DAME` on the target domain:
+
+```bash
+python fine_tuning_target_domain.py \
+ --dataset_loc entity-matching-dataset
+ --n_gpu 1
+ --pretrained_multi_xformer moe_dame
+ --batch_size 16
+```
+
 
 
 ## Fine-tuning of DAME on the target domain with Active Learning (AL)
