@@ -38,11 +38,27 @@ where the flags are:
 * ``--batch_size``: batch size for training and testing
 * ``--lr``: learning rate for training
 
-## Fine-tuning of DAME with different percentages of training data from target domain
+## Zero-shot results on the target domain
+
+To test `DAME` on the target domain:
+
+```bash
+python zero_shot_learning.py \
+ --dataset_loc entity-matching-dataset
+ --n_gpu 1
+ --pretrained_multi_xformer moe_dame
+ --batch_size 16
+```
+
+where the flags are:
+* ``--dataset_loc``: the data location
+* ``--n_gpu``: set to 1 for using GPU
+* ``--pretrained_multi_xformer``: the location of trained models
+* ``--batch_size``: batch size for testing
 
 
 
-## Fine-tuning of DAME with Active Learning (AL)
+## Fine-tuning of DAME on the target domain with Active Learning (AL)
 
 
 
