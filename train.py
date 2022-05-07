@@ -195,7 +195,7 @@ if __name__ == "__main__":
     device = torch.device("cpu")
     if args.n_gpu > 0 and torch.cuda.is_available():
         print("Training on GPU")
-        device = torch.device("cuda:1")
+        device = torch.device("cuda:0")
 
     # model configuration
     bert_model = 'distilbert-base-uncased'
