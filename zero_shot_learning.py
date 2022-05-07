@@ -22,10 +22,9 @@ if __name__ == "__main__":
     parser.add_argument("--dataset_loc", help="Root directory of the dataset", required=False, type=str,
                         default='entity-matching-dataset')
     parser.add_argument("--n_gpu", help="The number of GPUs to use", type=int, default=1)
-    parser.add_argument("--pretrained_multi_xformer",help="Directory with weights to initialize the domain specific models", type=str,default='moe_dame')
+    parser.add_argument("--pretrained_multi_xformer",help="Directory with trained models", type=str,default='moe_dame')
     parser.add_argument("--domains", nargs='+', help='A list of domains to use for training', default=['Walmart-Amazon','Abt-Buy','Beer','DBLP-GoogleScholar','Amazon-Google','cameras_','DBLP-ACM','Fodors-Zagats','iTunes-Amazon','shoes_','computers_','watches_'])
     parser.add_argument("--seed", type=int, help="Random seed", default=1000)
-    parser.add_argument("--model_dir", help="Where to store the saved model",default="multi_view_adversarial_wild_fine_tuned", type=str)
     parser.add_argument("--batch_size", help="The batch size", type=int, default=16)
     parser.add_argument("--model", help="Name of the model to run", default="VanillaBert")
 
