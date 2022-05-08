@@ -1,5 +1,4 @@
 import sys
-sys.path.append('/data/mohamedt/nokia_2021/entity_matching_domain_adaptation/')
 import argparse
 import gc
 import os
