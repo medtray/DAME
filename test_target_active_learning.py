@@ -776,7 +776,7 @@ if __name__ == "__main__":
     bert_model = 'distilbert-base-uncased'
     ##################
     # override for now
-    batch_size = 8#args.batch_size
+    batch_size = args.batch_size
     args.gradient_accumulation = 1
     ###############
     lr = args.lr
