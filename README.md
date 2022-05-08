@@ -68,11 +68,20 @@ python fine_tuning_target_domain.py \
  --batch_size 16
 ```
 
-
-
 ## Fine-tuning of DAME on the target domain with Active Learning (AL)
 
+To fine-tune `DAME` on the target domain using AL:
 
+```bash
+python test_target_active_learning.py \
+ --dataset_loc entity-matching-dataset
+ --n_gpu 1
+ --model_dir moe_dame
+ --batch_size 16
+ --active_learning usde
+```
+
+where the flag `--active_learning``  denotes the method used for Active Learning, and should be one of these options: ['random sampling','least confidence', 'entropy sampling', 'usde', 'bald', 'k-centers', 'k-means', 'core-set']
 
 ## Dropping expert models from source domains
 
